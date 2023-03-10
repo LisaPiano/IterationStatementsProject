@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Globalization;
 
 namespace IterationStatements
 {
@@ -54,12 +56,18 @@ namespace IterationStatements
             // Create a foreach loop using the collection - numbers
                 //In the scope of the foreach loop, print each number in numbers
              
+            foreach(var item in numbers)
+            { Console.WriteLine(item); 
+            }    
 
 
             Console.WriteLine("");
             Console.WriteLine("Decrease:");
 
-
+            for (int i = 199; i <= numbers.Count && i >= 0; i--) 
+            {
+                Console.WriteLine(i);
+            }
             // Create a for loop - this will print the numbers in reverse order - from 200 to 1
                 // in your initializer set the value of i to 199
                 // in your conditional, as long as i is less than or equal to the amount of items in "numbers" - use (numbers.Count)
