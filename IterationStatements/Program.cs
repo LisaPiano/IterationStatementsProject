@@ -66,7 +66,7 @@ namespace IterationStatements
 
             for (int i = 199; i <= numbers.Count && i >= 0; i--) 
             {
-                Console.WriteLine(i);
+                Console.WriteLine($"{numbers[i]}");
             }
             // Create a for loop - this will print the numbers in reverse order - from 200 to 1
                 // in your initializer set the value of i to 199
